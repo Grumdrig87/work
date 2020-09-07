@@ -868,7 +868,7 @@
                                 Uselect all
                             </a>
                         </div>
-                        <a href="#" class="btn footer__req">
+                        <a data-options='{"touch" : false}' data-fancybox data-src="#request" href="javascript:;" class="btn footer__req">
                             <span>Send request</span>
                             <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" fill="none" xmlns:v="https://vecta.io/nano"><path d="M.6 10.58L5.17 6 .6 1.4 2 0l6 6-6 6-1.4-1.42z" fill="#fff"/></svg>
                         </a>
@@ -876,7 +876,73 @@
                 </div>
             </footer>
         </div>
-    
+        
+        <form class="request__wrap" id="request">
+            <div class="request__form-title">
+                Request sending
+            </div>
+            <p>
+                Check your personal details, write the commentary and send the request
+            </p>
+            <div class="request__form-wrap">
+                <span>
+                    You had selected  
+                    <span data-count>
+                        4
+                    </span>
+                    platforms
+                </span>
+                <a href="#" class="request__list">
+                    Check list
+                </a>
+            </div>
+            <div class="request__inp-wrap request__name">
+                <input type="text" name="name" class="request__input" required>
+                <lable class="request__lable">Name</lable>
+            </div>
+            <div class="request__inp-wrap request__email">
+                <input type="email" name="email" class="request__input" required>
+                <lable class="request__lable">Email</lable>
+            </div>
+            <div class="request__inp-wrap request__skype">
+                <input type="text" name="skype" class="request__input" required>
+                <lable class="request__lable">Skype</lable>
+            </div>
+            <div class="request__inp-wrap request__website">
+                <input type="text" name="Website" class="request__input" required>
+                <lable class="request__lable">Website</lable>
+            </div>
+            <div class="request__inp-wrap">
+                <textarea name="message" class="request__input request__textarea" required></textarea>
+                <lable class="request__lable">Your comment</lable>
+            </div>
+            <div class="request__btns">
+                <a data-options='{"touch" : false}' data-fancybox data-src="#done" href="javascript:;" class="btn">
+                    Send
+                </a>
+                <a data-fancybox-close class="btn-sec">
+                    Close
+                </a>
+            </div>
+        </form>
+        <div class="request__wrap" id="done">
+            <div class="request__form-title">
+                Request was created!
+            </div>
+            <p>
+                We’ll contact you. You can also monitor requests status in your order list
+            </p>
+            <div class="request__btns">
+                <a data-fancybox-close class="btn">
+                    Ok
+                </a>
+                <a href="order-list.html" class="btn-sec">
+                    Order list
+                </a>
+            </div>
+        </div>
+
+
 
 
         <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
