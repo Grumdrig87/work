@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<title>Guestposter</title>
+	<meta name="description" content="Guestposter">
+	<meta name="keywords" content="Guestposter">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+	<!-- Favicon -->
+  
+	<!-- OG Tags -->
+	<meta property="og:title" content="Guestposter">
+	<meta property="og:description" content='Guestposter'>
+	<meta property="og:type" content="article">
+	<meta property="og:image" content="" >
+	<meta property="og:site_name" content="Guestposter">
+    <!-- link CSS -->
+    <link rel="stylesheet" href="../js/fancybox/jquery.fancybox.css">
+    <link rel="stylesheet" href="../js/select2/css/select2.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/mobile.css">
+    
+</head>
+<body>
+    <div class="wrap">
+        <header class="header">
+            <div class="container">
+                <div class="header__wrap">
+                    <a href="#" class="header__logo">
+                        <img src="../img/logo.png" alt="">
+                    </a>
+                    <nav class="header__nav" data-nav>
+                        <ul class="header__main-menu">
+                            <li class="menu-item">
+                                <a href="guestposting.html">
+                                    Guest posting              
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="nicheedits.html">
+                                    Niche edits           
+                                </a>
+                            </li>
+                            <li class="menu-item active">
+                                <a href="outreach.html">
+                                    Outreach             
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">
+                                    Backlinks             
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="orders.html">
+                                    Orders                
+                                </a>
+                            </li>
+                            <li class="menu-item menu-item-has-children">
+                                <a href="#">
+                                    Username                 
+                                </a>
+                                <div class="sub-menu">
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                My profile
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Logout
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div class="content">
+            <section class="outreach">
+                <div class="container">
+                    <div class="title">
+                        Outreach service
+                    </div>
+                    <p>
+                        Quisque dui iaculis ultrices convallis purus posuere. Auctor amet curabitur dictumst morbi. Elementum lectus morbi tristique est, integer sit tellus. Aliquam aliquam vel sed convallis maecenas pharetra eu potenti.  
+                    </p>
+                    <form class="request__wrap outreach__wrap">
+                        <div class="request__inp-wrap request__name">
+                            <input type="text" name="name" class="request__input" data-input>
+                            <lable class="request__lable">Name</lable>
+                        </div>
+                        <div class="request__inp-wrap request__email">
+                            <input type="email" name="email" class="request__input" data-input>
+                            <lable class="request__lable">Email</lable>
+                        </div>
+                        <div class="request__inp-wrap request__skype">
+                            <input type="text" name="skype" class="request__input" data-input>
+                            <lable class="request__lable">Skype</lable>
+                        </div>
+                        <div class="request__inp-wrap request__website">
+                            <input type="text" name="Website" class="request__input" data-input>
+                            <lable class="request__lable">Website</lable>
+                        </div>
+                        <div class="request__inp-wrap">
+                            <textarea name="message" class="request__input request__textarea" data-input></textarea>
+                            <lable class="request__lable">Your comment</lable>
+                        </div>
+                        <a data-options='{"touch" : false}' data-fancybox data-src="#done" href="javascript:;" class="btn">
+                            Send request
+                        </a>
+                    </form>
+                </div>
+            </section>
+
+        </div>
+        
+        <div class="request__wrap" id="done">
+            <div class="request__form-title">
+                Request was created!
+            </div>
+            <p>
+                We’ll contact you. You can also monitor requests status in your order list
+            </p>
+            <div class="request__btns">
+                <a data-fancybox-close class="btn">
+                    Ok
+                </a>
+                <a href="orders.html" class="btn-sec">
+                    Order list
+                </a>
+            </div>
+        </div>
+
+
+
+
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="../js/fancybox/jquery.fancybox.min.js"></script>
+    <link rel="stylesheet" href="../js/fancybox/jquery.fancybox.css">
+    <link rel="stylesheet" href="../js/footable/css/footable.standalone.min.css">
+    <script src="../js/select2/js/select2.min.js"></script>
+    <script src="../js/footable/js/footable.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>

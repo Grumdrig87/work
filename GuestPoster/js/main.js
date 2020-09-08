@@ -63,22 +63,16 @@ $(document).ready(function(){
         });
     }
     
+
+    $('[data-input]').on('blur', function () {
+        var input = $(this).val();
+        if (input.length > 0) { 
+            $(this).parent().addClass('valid'); 
+        } else { 
+            $(this).parent().removeClass('valid');  
+        }
+    });
     
 
 })
 
-
-// $(document).ready( function(){
-  
-//     // radio tabs
-//     $('[data-id="donInput"]').change( function(){
-//         var donatRadio = $('input[name=donatsearch__type]:checked').val();
-//         console.log(donatRadio);
-//         if ( donatRadio == 2 ) {
-//             $('[data-id="donation-input"]').attr("placeholder", "E-mail");
-//         }
-//         else {
-//             $('[data-id="donation-input"]').attr("placeholder", "+7 ( ______ ) _____ -____ -____");
-//         }
-//     })
-// })
