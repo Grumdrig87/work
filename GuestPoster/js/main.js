@@ -8,8 +8,10 @@ $(document).ready(function(){
         return false;
     });
     
-    $('[data-table]').footable();
-
+    $('[data-table]').footable({},function(){
+        $('[data-status]').select2();
+    });
+    $('[data-stat]').select2();
     // подсчет выбранных полей
 
     var count = 0;
@@ -91,6 +93,10 @@ $(document).ready(function(){
             $(inputBil).prop('checked', true);
         }
     })
+
+    ///select
+
+    
 
 })
 
