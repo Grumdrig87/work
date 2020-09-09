@@ -1,14 +1,16 @@
 $(document).ready(function(){
     $('[data-passview]').click( function(){
-        if ($('#pass').attr('type') == 'password'){
-            $('#pass').attr('type', 'text');
+        if ($(this).parent().find('#pass').attr('type') == 'password'){
+            $(this).parent().find('#pass').attr('type', 'text');
         } else {
-            $('#pass').attr('type', 'password');
+            $(this).parent().find('#pass').attr('type', 'password');
         }
         return false;
     });
     
     $('[data-table]').footable();
+
+    // подсчет выбранных полей
 
     var count = 0;
 
@@ -63,6 +65,7 @@ $(document).ready(function(){
         });
     }
     
+    //поля с перелетающими лэйблами
 
     $('[data-input]').on('blur', function () {
         var input = $(this).val();
@@ -72,7 +75,22 @@ $(document).ready(function(){
             $(this).parent().removeClass('valid');  
         }
     });
-    
+
+    // переключатель
+    var inputBil = $('.profile__check input[type=checkbox]');
+
+    $('.profile__month').click(function(){
+        if ($(inputBil).is(':checked')) {
+            $(inputBil).prop('checked', false);
+        }
+    })
+    $('.profile__ann').click(function(){
+        if ($(inputBil).is(':checked')) {
+            return false;
+        } else {
+            $(inputBil).prop('checked', true);
+        }
+    })
 
 })
 

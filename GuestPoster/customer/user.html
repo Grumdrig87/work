@@ -66,7 +66,7 @@
                                 <div class="sub-menu">
                                     <ul>
                                         <li>
-                                            <a href="#">
+                                            <a href="user.html">
                                                 My profile
                                             </a>
                                         </li>
@@ -95,10 +95,10 @@
                                 Quisque dui iaculis ultrices convallis purus posuere. 
                             </p>
                             <div class="profile__btns">
-                                <a href="#change" class="btn-sec">
+                                <a data-options='{"touch" : false}' data-fancybox data-src="#change" href="javascript:;" class="btn-sec">
                                     Change password
                                 </a>
-                                <a href="#confirm" class="btn-sec">
+                                <a data-options='{"touch" : false}' data-fancybox data-src="#confirm" href="javascript:;" class="btn-sec">
                                     Confirm Email
                                 </a>
                             </div>
@@ -228,21 +228,100 @@
                 </a>
             </div>
         </div>
-        <div class="request__wrap" id="done">
-            <div class="request__form-title">
-                Request was created!
+        <div class="activate" id="change">
+            <div class="title-sm">
+                Password changing
+            </div>
+            <div class="pass__error">
+                <span>
+                    There are some mistakes, try it again!
+                </span>
+                <a data-options='{"touch" : false,"closeExisting" : true}' data-fancybox data-src="#recovery" href="javascript:;">
+                    Or recovery password
+                </a>
+            </div>
+            <div class="form__password">
+                <input type="password" name="pass2" id="pass" class="form__input" data-input>
+                <span class="pass-lable">Old password</span>
+                <label for="pass2" class="pass__label" data-passview>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="19" fill="none" xmlns:v="https://vecta.io/nano"><path d="M10.83 6L14 9.16V9a3 3 0 0 0-3-3h-.17zm-4.3.8l1.55 1.55c-.05.2-.08.42-.08.65a3 3 0 0 0 3 3 2.82 2.82 0 0 0 .65-.08l1.55 1.55c-.67.33-1.4.53-2.2.53a5 5 0 0 1-5-5c0-.8.2-1.53.53-2.2zM1 1.27L3.73 4C2.08 5.3.78 7 0 9c1.73 4.4 6 7.5 11 7.5 1.55 0 3.03-.3 4.38-.84l.43.42L18.73 19 20 17.73 2.27 0 1 1.27zM11 4a5 5 0 0 1 5 5 4.8 4.8 0 0 1-.36 1.82l2.93 2.93c1.5-1.25 2.7-2.9 3.43-4.75-1.73-4.4-6-7.5-11-7.5-1.4 0-2.74.25-4 .7l2.17 2.15A5.05 5.05 0 0 1 11 4z" fill="#bdbdbd"/></svg>
+                </label>
+            </div>
+            <div class="form__password">
+                <input type="password" name="pass3" id="pass" class="form__input" data-input>
+                <span class="pass-lable">New password</span>
+                <label for="pass3" class="pass__label" data-passview>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="19" fill="none" xmlns:v="https://vecta.io/nano"><path d="M10.83 6L14 9.16V9a3 3 0 0 0-3-3h-.17zm-4.3.8l1.55 1.55c-.05.2-.08.42-.08.65a3 3 0 0 0 3 3 2.82 2.82 0 0 0 .65-.08l1.55 1.55c-.67.33-1.4.53-2.2.53a5 5 0 0 1-5-5c0-.8.2-1.53.53-2.2zM1 1.27L3.73 4C2.08 5.3.78 7 0 9c1.73 4.4 6 7.5 11 7.5 1.55 0 3.03-.3 4.38-.84l.43.42L18.73 19 20 17.73 2.27 0 1 1.27zM11 4a5 5 0 0 1 5 5 4.8 4.8 0 0 1-.36 1.82l2.93 2.93c1.5-1.25 2.7-2.9 3.43-4.75-1.73-4.4-6-7.5-11-7.5-1.4 0-2.74.25-4 .7l2.17 2.15A5.05 5.05 0 0 1 11 4z" fill="#bdbdbd"/></svg>
+                </label>
+            </div>
+            <div class="form__password">
+                <input type="password" name="pass4" id="pass" class="form__input" data-input>
+                <span class="pass-lable">Repeat new password</span>
+                <label for="pass4" class="pass__label" data-passview>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="19" fill="none" xmlns:v="https://vecta.io/nano"><path d="M10.83 6L14 9.16V9a3 3 0 0 0-3-3h-.17zm-4.3.8l1.55 1.55c-.05.2-.08.42-.08.65a3 3 0 0 0 3 3 2.82 2.82 0 0 0 .65-.08l1.55 1.55c-.67.33-1.4.53-2.2.53a5 5 0 0 1-5-5c0-.8.2-1.53.53-2.2zM1 1.27L3.73 4C2.08 5.3.78 7 0 9c1.73 4.4 6 7.5 11 7.5 1.55 0 3.03-.3 4.38-.84l.43.42L18.73 19 20 17.73 2.27 0 1 1.27zM11 4a5 5 0 0 1 5 5 4.8 4.8 0 0 1-.36 1.82l2.93 2.93c1.5-1.25 2.7-2.9 3.43-4.75-1.73-4.4-6-7.5-11-7.5-1.4 0-2.74.25-4 .7l2.17 2.15A5.05 5.05 0 0 1 11 4z" fill="#bdbdbd"/></svg>
+                </label>
+            </div>
+            <div class="request__btns">
+                <a data-options='{"touch" : false,"closeExisting" : true}' data-fancybox data-src="#changedone" href="javascript:;" class="btn">
+                    Save
+                </a>
+                <a data-fancybox-close class="btn-sec">
+                    Close
+                </a>
+            </div>
+        </div>
+        <div class="activate recovery" id="recovery">
+            <div class="title-sm">
+                Password recovering
             </div>
             <p>
-                We’ll contact you. You can also monitor requests status in your order list
+                Please enter your Email. We’ll send letter to your Email for password recovering
             </p>
+            <div class="request__inp-wrap request__email">
+                <input type="email" name="email" class="request__input" placeholder="Enter your email" data-input>
+            </div>
             <div class="request__btns">
-                <a data-fancybox-close class="btn">
-                    Ok
+                <a data-options='{"touch" : false,"closeExisting" : true}' data-fancybox data-src="#recdone" href="javascript:;" class="btn">
+                    Recover password
                 </a>
-                <a href="orders.html" class="btn-sec">
-                    Order list
+                <a data-fancybox-close class="btn-sec">
+                    Close
                 </a>
             </div>
+        </div>
+        <div class="activate recovery" id="recdone">
+            <div class="title-sm">
+                Great!
+            </div>
+            <p>
+                Check your Email. We sended to you letter for password recovering
+            </p>
+            <a data-fancybox-close class="btn recovery__ok">
+                Ok
+            </a>
+        </div>
+        <div class="activate recovery" id="changedone">
+            <div class="title-sm">
+                Done!
+            </div>
+            <p>
+                Your password was succeffully changed
+            </p>
+            <a data-fancybox-close class="btn recovery__ok">
+                Ok
+            </a>
+        </div>
+
+        <div class="activate recovery" id="confirm">
+            <div class="title-sm">
+                Check your Email
+            </div>
+            <p>
+                Within 30 minutes you'll get our letter with confirmation of entered email
+            </p>
+            <a data-fancybox-close class="btn recovery__ok">
+                Ok
+            </a>
         </div>
 
 
