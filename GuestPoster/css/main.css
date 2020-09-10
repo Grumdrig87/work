@@ -460,7 +460,7 @@ p {
 /* ----GUEST SECTION---- */
 
 .content {
-    padding: 104px 0 321px;
+    padding: 100px 0;
 }
 
 .guest p {
@@ -1635,6 +1635,8 @@ th.order__col {
     padding: 16px;
 }
 
+
+
 .select2-results__option:nth-child(1),
 .select2-selection__rendered[title="New"] {
     color: #2F80ED !important;
@@ -1674,6 +1676,10 @@ th.order__col {
 }
 .select2-container--open .select2-selection__rendered[title="Completed"] + .select2-selection__arrow b {
     border-bottom-color: #27AE60 !important;
+}
+
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+    background: #ddd !important;
 }
 
 .select2-container--default .select2-results>.select2-results__options {
