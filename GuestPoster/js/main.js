@@ -94,7 +94,13 @@ $(document).ready(function(){
         }
     })
 
-    ///select
+    // burger
+
+    $('[data-burger]').click(function(){
+        $('body').toggleClass("open");
+        $(this).toggleClass("open");
+        $('[data-nav]').toggleClass("open");
+      });
 
     
 

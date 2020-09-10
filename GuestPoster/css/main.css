@@ -308,7 +308,7 @@ p {
 .header {
     position: fixed;
     width: 100%;
-    z-index: 100;
+    z-index: 101;
     background: #FFFFFF;
     padding: 14px 0 9px;
     -webkit-box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
@@ -1896,4 +1896,110 @@ th.order__col {
 .order__gp-comment {
     width: 50%;
     margin-bottom: 40px;
+}
+
+.user__skype {
+    font-size: 14px;
+    line-height: 16px;
+    color: #828282;
+    margin-top: 8px;
+    display: block;
+}
+
+.user__site a {
+    color: #2F80ED;
+}
+
+.admin-user .order__col:nth-child(1) {
+ width: 4%;
+}
+
+.admin-user .order__col:nth-child(2) {
+    width: 20%;
+}
+
+.admin-user .order__col:nth-child(3) {
+    width: 17%;
+}
+.admin-user .order__col:nth-child(4) {
+    width: 13%;
+}
+.admin-user .order__col:nth-child(5) {
+    width: 7%;
+}
+
+.admin-user .order__col:nth-child(6) {
+    width: 11%;
+}
+.admin-user .order__col:nth-child(7) {
+    width: 14%;
+}
+
+.user__btn {
+    text-decoration: none;
+}
+
+.users p {
+    margin-bottom: 24px;
+}
+
+.user__btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 14px 24px 14px 16px;
+}
+.user__btn svg path {
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.user__btn:hover svg path {
+    fill: #fff;
+}
+.user__btn svg  {
+    margin-left: 16px;
+}
+
+.user__btn-set {
+    text-decoration: none;
+}
+
+.admin-user {
+    margin-top: 12px;
+}
+
+.admin-user .order__row tr th,
+.admin-user .order__row td {
+    padding: 16px 16px 13px;
+}
+
+.user__btn-unset {
+    background: #FFF4F4;
+    -webkit-border-radius: 4px;
+       -moz-border-radius: 4px;
+            border-radius: 4px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #EB5757;
+    padding: 12px 16px;
+    text-decoration: none;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.users-admin .order__back-btn {
+    margin-bottom: 0 !important;
+}
+
+.user__btn-unset:hover {
+    background: #EB5757;
+    color: #fff;
+}
+
+
+.users-admin .order__col:nth-child(7) {
+    width: 15%;
 }
