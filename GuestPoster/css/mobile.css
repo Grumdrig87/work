@@ -7,7 +7,9 @@
 
 /* 1200-1375px */
 @media screen and (max-width: 1375px) {
-
+  .orders .order__col:nth-child(5) {
+    width: 17%;
+}
 }
 
 
@@ -31,7 +33,6 @@
 .users-admin .order__col:nth-child(7) {
   width: 25%;
 }
-
 }
  
 /* 769-992px */
@@ -337,6 +338,9 @@ table.footable-details>tbody>tr>th:nth-child(1) {
 .user__btn-unset,
 .user__btn-set {
   padding: 10px 16px;
+}
+.stat {
+  width: 100%;
 }
 }
 
