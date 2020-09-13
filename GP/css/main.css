@@ -1,0 +1,186 @@
+/*---------- FONTS -------------*/
+
+
+/*--------Specification--------*/
+
+body {
+	margin: 0;
+	padding: 0;
+    font-family: 'Roboto',sans-serif;
+	font-size: 15px;
+    font-weight: 400;
+    color: #333;
+}
+
+.wrap {
+    max-width: 1920px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.content__wrap {
+    width: 1040px;
+    margin: 0 auto;
+}
+
+.container {
+	width: 1214px;
+	margin: 0 auto;
+}
+
+li {
+	display: block;
+}
+
+h1, h2, h3, h4, h5 {
+	margin: 0;
+    padding: 0;
+
+}
+
+div, p, ul, li, span, button, input, a, form, textarea {
+	-webkit-box-sizing: border-box;
+	        -moz-box-sizing: border-box;
+	     box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+p {
+    line-height: 26px;
+}
+
+a {
+    color: #2F80ED;
+    text-decoration: none;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #71a9d9;
+}
+
+.h1 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 60px;
+}
+
+
+.h2 {
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+}
+
+.h3 {
+    
+}
+
+.h4 {
+    
+}
+
+
+
+input[type=text], input[type=submit], textarea{
+	-webkit-appearance: none;
+} 
+
+input {
+  border: 0;
+  outline: none;
+}
+
+.menu_btn {
+    display: none;
+}
+
+.btn {
+    display: inline-block;
+    color: #fff;
+    background: #2F80ED;
+    -webkit-border-radius: 5px;
+       -moz-border-radius: 5px;
+            border-radius: 5px;
+    font-weight: 700;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 19px 32px;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+
+.btn:hover {
+    color: #fff;
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.1)), to(rgba(255, 255, 255, 0.1))), #2F80ED;
+    background: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), #2F80ED;
+    background: -moz-linear-gradient(bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), #2F80ED;
+    background: -o-linear-gradient(bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), #2F80ED;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), #2F80ED;
+}
+.btn:active{
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.1)), to(rgba(255, 255, 255, 0.1))), #2F80ED;
+    background: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), #2F80ED;
+    background: -moz-linear-gradient(bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), #2F80ED;
+    background: -o-linear-gradient(bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), #2F80ED;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), #2F80ED;
+    color: #fff;
+    outline: none;
+    border: none;
+}
+.btn:focus {
+    outline: none;
+    border: none;
+}
+
+.center__btn {
+    text-align: center;
+}
+
+
+.breadcrumbs {
+    font-size: 14px;
+    line-height: 24px;
+    color: #BDBDBD;
+    margin-bottom: 28px;
+    position: relative;
+    z-index: 2;
+}
+
+.breadcrumbs__link {
+    font-size: 14px;
+    line-height: 24px;
+    color: #BDBDBD;
+    text-decoration: none;
+}
+
+.breadcrumbs__link:hover {
+    text-decoration: underline;
+}
+
+.breadcrumbs__separator {
+    margin: 0 10px;
+}
+
+
+
+/* ----SLICK--- */
+
+
+
+
+/* ---pagination--- */
+
+
+
+
+/* -----------------------------Header---------------------------- */
