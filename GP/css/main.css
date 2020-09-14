@@ -23,6 +23,11 @@ body {
 	margin: 0 auto;
 }
 
+.container-sm {
+    width: 1042px;
+	margin: 0 auto; 
+}
+
 li {
 	display: block;
 }
@@ -42,8 +47,8 @@ div, p, ul, li, span, button, input, a, form {
 }
 
 a {
-	color: #828282;
-    text-decoration: underline;
+    color: #2F80ED;
+    text-decoration: none;
     -webkit-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
@@ -51,7 +56,7 @@ a {
 }
 
 a:hover {
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 .title {
@@ -103,14 +108,16 @@ input {
     -webkit-border-radius: 4px;
        -moz-border-radius: 4px;
             border-radius: 4px;
-    font-weight: 500;
-    font-size: 14px;
+    font-weight: 700;
+    font-size: 16px;
     line-height: 16px;
     text-align: center;
-    text-transform: uppercase;
     color: #FFFFFF;
-    padding: 14px 16px;
+    padding: 20px 43px;
     text-decoration: none;
+    -webkit-box-shadow: 0px 4px 10px rgba(47, 128, 237, 0.2);
+       -moz-box-shadow: 0px 4px 10px rgba(47, 128, 237, 0.2);
+            box-shadow: 0px 4px 10px rgba(47, 128, 237, 0.2);
 }
 
 .btn:hover {
@@ -179,3 +186,54 @@ p {
 
 
 /* -----------------------------Header---------------------------- */
+
+
+.header__wrap {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+       -moz-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+.header__main-menu {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.header__main-menu > li > a {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333333;
+    border-bottom: 2px solid transparent;
+}
+
+.header__main-menu > li:not(:last-child) {
+    margin-right: 40px;
+}
+.header__main-menu > li:last-child {
+    color: #2F80ED;
+}
+
+.header__main-menu > li a:hover {
+    text-decoration: none;
+    border-bottom: 2px solid #333;
+}
+
+.menu-item-has-children > .sub-menu{
+    display: none;
+}
