@@ -26,9 +26,26 @@ jQuery(document).ready(function($){
     //   $(this).prev().toggleClass('bord');
     // })
 
-    //selects
+    //header menu 
+    $('.menu-item-has-children').click(function(){
+      $(this).find('.sub-menu').addClass('opened');
+      $('header').addClass('opened');
+      $('body').addClass('opened');
+    })
 
-      //header menu 
+    function closeMenu () {
+      $(document).mouseup(function (e){ // событие клика по веб-документу
+        var div = $(".menu-item-has-children"); // тут указываем ID элемента
+        if (!div.is(e.target) // если клик был не по нашему блоку
+          && div.has(e.target).length === 0) { // и не по его дочерним элементам
+          div.find('.sub-menu').removeClass('opened');
+          $('header').removeClass("opened");
+          $('body').removeClass('opened');
+        }
+      });
+    };
+
+    closeMenu();
     // burger
 
     $('[data-burger]').click(function(){
