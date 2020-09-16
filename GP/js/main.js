@@ -56,5 +56,19 @@ jQuery(document).ready(function($){
 
       // adaptive
 
+
+      //black
+      $(window).scroll(function() {
+        if (($(window).scrollTop() + 450) >= $('[data-black]').offset().top) {
+          $('body').addClass('black');
+        }
+        if (($(window).scrollTop() + 450) < $('[data-black]').offset().top) {
+          $('body').removeClass('black');
+        }
+        if (($(window).scrollTop() + 350) >= ($('[data-black]').offset().top + $('[data-black]').outerHeight(true))) {
+          $('body').removeClass('black');
+        }
+      });
+
       
 })
