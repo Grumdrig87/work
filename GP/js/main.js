@@ -12,19 +12,10 @@ jQuery(document).ready(function($){
   
      // accordeon
 
-    //  $('[data-expopen]').click(function(){
-    //   $(this).closest('div.explore__table-wrap').toggleClass('active');
-    //   $(this).toggleClass('opened');
-    //   $(this).closest('div.explore__table-wrap').find('.explore__info').slideToggle(400);
-    //   $(this).closest('div.explore__table-wrap').prev().toggleClass('bord')
-    // })
-
-    // $('[data-faq]').click(function(){
-    //   $(this).toggleClass('active');
-    //   $(this).find('.explore__open').toggleClass('opened');
-    //   $(this).find('.explore__info').slideToggle(400);
-    //   $(this).prev().toggleClass('bord');
-    // })
+    $('[data-faq]').click(function(){
+      $(this).find('.faq__title').toggleClass('opened');
+      $(this).find('p').slideToggle(400);
+    })
 
     //header menu 
     $('.menu-item-has-children').click(function(){
