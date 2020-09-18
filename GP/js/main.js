@@ -22,6 +22,7 @@ jQuery(document).ready(function($){
       $(this).find('.sub-menu').addClass('opened');
       $('header').addClass('opened');
       $('body').addClass('opened');
+      $('[data-blkscr]').css('top', ($('.header').height() + $('.menu-item-has-children > .sub-menu').height()))
     })
 
     function closeMenu () {
