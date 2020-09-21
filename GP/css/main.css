@@ -2418,3 +2418,175 @@ line-height: 24px;
 .about .page-art {
     padding-top: 24px;
 }
+
+
+/* -----------------------------LOGIN PAGE---------------------------- */
+
+.login {
+    min-height: 100vh;
+    background: #E5E5E5;
+    padding: 82px 0;
+}
+
+.login__wrap {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.login__logo {
+    margin-bottom: 62px;
+}
+
+.login__form {
+    background: #FFFFFF;
+    -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+       -moz-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    -webkit-border-radius: 8px;
+       -moz-border-radius: 8px;
+            border-radius: 8px;
+    padding: 48px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 476px;
+}
+
+.login__form-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #333333;
+    margin-bottom: 24px;
+}
+
+.form__input {
+    background: #FFFFFF;
+    border: 1px solid #BDBDBD;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-border-radius: 4px;
+       -moz-border-radius: 4px;
+            border-radius: 4px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 16px 16px 14px;
+    color: #828282;
+    width: 100%;
+}
+
+.form__input::-webkit-input-placeholder {
+    color: #828282;
+}
+
+.form__input:-moz-placeholder {
+    color: #828282;
+}
+
+.form__input::-moz-placeholder {
+    color: #828282;
+}
+
+.form__input:-ms-input-placeholder {
+    color: #828282;
+}
+
+.form__input::-ms-input-placeholder {
+    color: #828282;
+}
+
+.form__input::placeholder {
+    color: #828282;
+}
+
+
+.form__password {
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.form__email {
+    margin-bottom: 32px;
+}
+
+.pass__label {
+    position: absolute;
+    top: 19px;
+    right: 18px;
+    cursor: pointer;
+}
+
+.form__forgot {
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 24px;
+}
+
+.form__btn-wrap {
+    width: 100%;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #F2F2F2;
+    margin-bottom: 24px;
+}
+
+.form__btn {
+    width: 100%;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 14px 0;
+    font-weight: 500;
+}
+
+.form__btn:hover {
+    text-decoration: none;
+}
+
+.form__small-title {
+    margin-bottom: 16px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    color: #828282;
+}
+
+.login__done-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #333333;
+    margin-bottom: 16px;
+}
+
+.login__done-txt {
+    font-size: 14px;
+    line-height: 16px;
+    color: #828282;
+    margin-bottom: 32px;
+}

@@ -1,14 +1,4 @@
-jQuery(document).ready(function($){
-
-
-    //mainpage tabs
-    // $('[data-tab]').on('click', function() {
-    //     $(this).addClass('active').siblings().removeClass('active')
-    //       .closest('div.main__right').find('div.main__form').removeClass('active').eq($(this).index()).addClass('active');
-    // });
-
-
-     
+jQuery(document).ready(function($){    
   
      // accordeon
 
@@ -61,6 +51,17 @@ jQuery(document).ready(function($){
           $('body').removeClass('black');
         }
       });
+
+      //password
+
+      $('[data-passview]').click( function(){
+        if ($(this).parent().find('#pass').attr('type') == 'password'){
+            $(this).parent().find('#pass').attr('type', 'text');
+        } else {
+            $(this).parent().find('#pass').attr('type', 'password');
+        }
+        return false;
+    });
 
       
 })
