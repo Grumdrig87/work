@@ -8,36 +8,58 @@ jQuery(document).ready(function($){
     })
 
     //header menu 
-    $('.menu-item-has-children').click(function(){
-      $(this).find('.sub-menu').addClass('opened');
-      $('header').addClass('opened');
-      $('body').addClass('opened');
-      $('[data-blkscr]').css('top', ($('.header').height() + $('.menu-item-has-children > .sub-menu').height()))
-    })
-
-    function closeMenu () {
-      $(document).mouseup(function (e){ // событие клика по веб-документу
-        var div = $(".menu-item-has-children"); // тут указываем ID элемента
-        if (!div.is(e.target) // если клик был не по нашему блоку
-          && div.has(e.target).length === 0) { // и не по его дочерним элементам
-          div.find('.sub-menu').removeClass('opened');
-          $('header').removeClass("opened");
-          $('body').removeClass('opened');
-        }
-      });
-    };
-
-    closeMenu();
+    if ($(window).width() > 993) {
+      $('.menu-item-has-children').click(function(){
+        $(this).find('.sub-menu').addClass('opened');
+        $('header').addClass('opened');
+        $('body').addClass('opened');
+        $('[data-blkscr]').css('top', ($('.header').height() + $('.menu-item-has-children > .sub-menu').height()))
+      })
+  
+      function closeMenu () {
+        $(document).mouseup(function (e){ // событие клика по веб-документу
+          var div = $(".menu-item-has-children"); // тут указываем ID элемента
+          if (!div.is(e.target) // если клик был не по нашему блоку
+            && div.has(e.target).length === 0) { // и не по его дочерним элементам
+            div.find('.sub-menu').removeClass('opened');
+            $('header').removeClass("opened");
+            $('body').removeClass('opened');
+          }
+        });
+      };
+  
+      closeMenu();
+    }
+    
     // burger
 
     $('[data-burger]').click(function(){
         $('html').toggleClass("open");
         $(this).toggleClass("open");
         $('[data-nav]').toggleClass("open");
+        $('body').toggleClass('opened');
       });
 
       // adaptive
-
+      if ($(window).width() < 994) {
+        $('.menu-item-has-children').click(function(){
+          $(this).addClass('opened');
+        })
+    
+        function closeMenu () {
+          $(document).mouseup(function (e){ // событие клика по веб-документу
+            var div = $("[data-nav]"); // тут указываем ID элемента
+            if (!div.is(e.target) // если клик был не по нашему блоку
+              && div.has(e.target).length === 0 && $('[data-burger]').is(e.target)) { // и не по его дочерним элементам
+              div.find('.sub-menu').removeClass('opened');
+              div.removeClass('open');
+              $('body').removeClass('opened');
+            }
+          });
+        };
+    
+        closeMenu();
+      }
 
       //black
       $(window).scroll(function() {
