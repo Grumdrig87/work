@@ -46,7 +46,7 @@
     top: 0;
     padding: 70px 0 30px;
     right: -100%;
-    min-height: 100vh;
+    min-height: 82vh;
     background-color: #fff;
     overflow: hidden;
     -webkit-box-shadow: 0px 0px 16px 0px rgba(0, 1, 1, 0.15);
@@ -126,12 +126,6 @@
 .sub-menu ul {
   padding-top: 16px;
 }
-
-
-  
-  .header__nav > ul > li.menu-item-has-children:hover > .sub-menu {
-    display: none;
-  }
 
   .header__main-menu > li:last-child {
     margin-right: 0;
@@ -261,21 +255,8 @@
   .header {
     z-index: unset;
   }
-
-  .sub-menu {
-    display: block !important;
-    position: absolute;
-    top: 0 !important;
-    right: -100% !important;
-    opacity: 1 !important;
-    -webkit-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-    width: 100% !important;
-  }
-  .menu-item-has-children.opened > .sub-menu {
-    right: 0;
+  .menu-item-has-children.opened > .adaptive-sub {
+    right: 0 !important;
   }
   .main__wrap {
     width: 100%;
@@ -316,6 +297,58 @@
 .header__page:after {
   right: -30%;
 }
+.menu-item-has-children > .sub-menu {
+
+  display: block !important;
+    position: static;
+    opacity: 1 !important;
+    
+    width: 100% !important;
+    border-top: none;
+    pointer-events: all;
+}
+.adaptive-sub {
+  position: absolute;
+  top: -10px !important;
+  right: -100% !important;
+  min-height: 90vh;
+  z-index: 5;
+  width: 100% !important;
+  -webkit-transition: all 0.3s ease !important;
+    -o-transition: all 0.3s ease !important;
+    -moz-transition: all 0.3s ease !important;
+    transition: all 0.3s ease !important;
+}
+.menu-item-has-children {
+  position: relative;
+}
+
+.menu-item-has-children > .adaptive-sub > .sub-menu > li {
+  position: relative;
+  padding: 14px 20px;
+}
+.menu-item-has-children > .adaptive-sub > .sub-menu > li > a {
+  margin-bottom: 0;
+  font-weight: 700;
+    font-size: 24px;
+    line-height: 40px;
+    color: #000000;
+    padding-right: 18px;
+    position: relative;
+    display: inline-block;
+}
+
+.menu-item-has-children > .adaptive-sub > .sub-menu > li li:not(:last-child) {
+  margin-bottom: 15px;
+}
+.menu-item-has-children > .adaptive-sub > .sub-menu:after {
+  display: none;
+}
+
+body.opened .header__nav.adapt-opened  {
+  overflow-y: scroll;
+}
+
 }
 
 /* 577-768px */

@@ -38,27 +38,18 @@ jQuery(document).ready(function($){
         $(this).toggleClass("open");
         $('[data-nav]').toggleClass("open");
         $('body').toggleClass('opened');
+        $("[data-nav]").find('.menu-item-has-children').removeClass('opened');
+        $("[data-nav]").removeClass('adapt-opened');
       });
 
       // adaptive
       if ($(window).width() < 994) {
-        $('.menu-item-has-children').click(function(){
+        $('.header__main-menu > .menu-item-has-children').click(function(){
           $(this).addClass('opened');
+          $("[data-nav]").addClass('adapt-opened');
         })
-    
-        function closeMenu () {
-          $(document).mouseup(function (e){ // событие клика по веб-документу
-            var div = $("[data-nav]"); // тут указываем ID элемента
-            if (!div.is(e.target) // если клик был не по нашему блоку
-              && div.has(e.target).length === 0 && $('[data-burger]').is(e.target)) { // и не по его дочерним элементам
-              div.find('.sub-menu').removeClass('opened');
-              div.removeClass('open');
-              $('body').removeClass('opened');
-            }
-          });
-        };
-    
-        closeMenu();
+        $('.header__main-menu > .menu-item-has-children > a').after('<span class="adaptive-sub"></span>');
+        $('.header__main-menu > .menu-item-has-children > .sub-menu').appendTo('.adaptive-sub');
       }
 
       //black
